@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rick</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="pie"></div>
+    <script>
+        Plotly.d3.json('/pie', function(error, data){
+            if (error) return console.warn(error);
+
+            var layout = {
+                title: "Lyric Frequency"}
+            var PIE = document.getElementById('pie');
+            Plotly.plot(PIE, data, layout);
+        })
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BB pie</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="pie"></div>
+    <script>
+        
+        // Plot the default route once the page loads
+        
+        Plotly.d3.json(default_url, function(error, response) {
+            if (error) return console.warn(error);
+            
+            var layout = { title: "PIE CHART" }
+            var PIE = document.getElementById('pie');
+            Plotly.plot("PIE", data, layout)
+        })
+    </script>
+    </body>
