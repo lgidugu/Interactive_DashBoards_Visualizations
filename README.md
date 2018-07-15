@@ -1,1 +1,2 @@
 # Interactive_DashBoards_Visualizations
+Belly Button Diversity is an assignment where SQL Alchemy was used to store data that was read using python from CSV files. Following calls were made using Flask. A list of bacteria samples, OUT descriptions, sample metadata. Plotly is used to restyle and uodate the data with the each sample selected. A user option is provided to select the sample the wish to view the information on, the visualitions and data update with it. 
